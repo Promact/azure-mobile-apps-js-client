@@ -14,9 +14,16 @@ and [Android apps](http://azure.microsoft.com/en-us/documentation/articles/mobil
 
 To get the source code of our SDKs and samples via **git** just type:
 
-    git clone https://github.com/Azure/azure-mobile-apps-js-client.git
+    git clone --recursive https://github.com/Azure/azure-mobile-apps-js-client.git
     cd ./azure-mobile-apps-js-client/
 
+If you have git <= 1.6.2 then type:
+
+    git clone https://github.com/Azure/azure-mobile-apps-js-client.git
+    cd ./azure-mobile-apps-js-client/
+    git submodule update --init --recursive
+
+Azure Mobile Aps Client SDK uses [queryjs](https://github.com/WindowsAzure/queryjs.git) and [esprima](https://github.com/ariya/esprima.git). They are added as submodule in External folder.
 ## Reference Documentation
 
 ## Change log
